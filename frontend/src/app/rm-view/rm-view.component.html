@@ -1,9 +1,18 @@
 <!-- Account controls section will go up here. -->
+<app-account-header></app-account-header>
+
+<ul class="router-nav">
+    <li><a [routerLink]="['./client-acquisition']">Client Acquisition</a></li>
+    <li><a [routerLink]="['./client-management']">Client Management</a></li>
+    <li><a [routerLink]="['./skillset-training']">Skillset Training</a></li>
+    <li><a [routerLink]="['./products-pool']">Products Pool</a></li>
+  </ul>
 
 <!-- Content area divided between paginated components and sidebar - 80-20 split. -->
 <div class="grid">
-
-  <router-outlet></router-outlet>
+  <div>
+    <router-outlet></router-outlet>
+  </div>
 
   <app-account-sidebar></app-account-sidebar>
 

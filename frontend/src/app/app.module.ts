@@ -9,6 +9,11 @@ import { LoginFormComponent } from './login-form/login-form.component';
 import { RMViewComponent } from './rm-view/rm-view.component';
 import { ClientViewComponent } from './client-view/client-view.component';
 import { AccountSidebarComponent } from './account-sidebar/account-sidebar.component';
+import { RMCAComponent } from './rm-ca/rm-ca.component';
+import { AccountHeaderComponent } from './account-header/account-header.component';
+import { RMCMComponent } from './rm-cm/rm-cm.component';
+import { TrainingComponent } from './training/training.component';
+import { ProductsComponent } from './products/products.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +22,12 @@ import { AccountSidebarComponent } from './account-sidebar/account-sidebar.compo
     LoginFormComponent,
     RMViewComponent,
     ClientViewComponent,
-    AccountSidebarComponent
+    AccountSidebarComponent,
+    RMCAComponent,
+    AccountHeaderComponent,
+    RMCMComponent,
+    TrainingComponent,
+    ProductsComponent
   ],
   imports: [
     BrowserModule,

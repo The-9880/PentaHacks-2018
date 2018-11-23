@@ -3,11 +3,22 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { LoginComponent } from './login/login.component';
 import { RMViewComponent } from './rm-view/rm-view.component';
+import { RMCAComponent } from './rm-ca/rm-ca.component';
+import { RMCMComponent } from './rm-cm/rm-cm.component';
+import { TrainingComponent } from './training/training.component';
+import { ProductsComponent } from './products/products.component';
 
 const routes : Routes = [
   {path: '', redirectTo:'/login', pathMatch:'full'},
   {path:'login', component:LoginComponent},
-  {path:'RM/:id', component: RMViewComponent}
+  {path:'RM/:id', component: RMViewComponent,
+  children: [
+    {path: '', redirectTo: 'client-acquisition', pathMatch:'full'},
+    {path: 'client-acquisition', component: RMCAComponent},
+    {path: 'client-management', component: RMCMComponent},
+    {path: 'skillset-training', component: TrainingComponent},
+    {path: 'products-pool', component: ProductsComponent}
+  ]}
 ];
 
 @NgModule({

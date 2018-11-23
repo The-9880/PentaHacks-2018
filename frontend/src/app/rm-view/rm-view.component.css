@@ -6,3 +6,13 @@
     width: 100%;
     height: 100%;
 }
+
+.router-nav
+{
+    display: flex;
+    list-style-type: none;
+}
+.router-nav li
+{
+    margin: 0 1vw;
+}
