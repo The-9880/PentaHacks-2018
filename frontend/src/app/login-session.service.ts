@@ -67,5 +67,7 @@ export class LoginSessionService {
     this.accountID = undefined;
     this.accountType = undefined;
     this.authenticated = false;
+
+    window.location.href="/";
   }
 }

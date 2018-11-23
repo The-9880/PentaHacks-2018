@@ -1,0 +1,13 @@
+div
+{
+}
+ul
+{
+    list-style-type: none;
+    text-align: right;
+}
+ul li
+{
+    display: inline;
+    margin: 0 1vw;
+}

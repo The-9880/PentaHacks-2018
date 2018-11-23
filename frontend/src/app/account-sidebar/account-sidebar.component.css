@@ -9,4 +9,9 @@
 {
     height: 100%;
     width: 100%;
+    
+    background-color: rgb(245, 245, 245);
+    border-bottom: 1px solid white;
+
+    text-align: center;
 }
