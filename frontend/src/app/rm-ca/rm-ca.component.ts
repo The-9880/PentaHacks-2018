@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Customer } from '../customer';
+
+import { BackendService } from '../backend.service';
 
 @Component({
   selector: 'app-rm-ca',
@@ -7,9 +10,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RMCAComponent implements OnInit {
 
-  constructor() { }
+  private customers : Customer[] = [];
+
+  constructor(private backend : BackendService) { }
 
   ngOnInit() {
+
+    this.backend.getAllCustomers().subscribe(data => this.customers.push(data));
+
   }
 
 }
