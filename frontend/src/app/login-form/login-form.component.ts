@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-login-form',
@@ -7,12 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginFormComponent implements OnInit {
 
+  @Input() loginAs:string; // Describe what entity type is trying to log in - client or RM
+
   private username:string;
   private password:string;
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  signIn()
+  {
+    alert(this.loginAs);
   }
 
 }

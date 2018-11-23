@@ -1,8 +1,14 @@
+.pageTitle
+{
+    font-size: 6vw;
+    margin: 0;
+    text-align: center;
+}
+
 .grid
 {
     height:100%;
-    width:100%;
-    background-color: lightblue;
+    width:100%; 
 
     display:grid;
     position: relative;
@@ -14,5 +20,5 @@ app-login-form
     height: 50%;
     width: 50%;
 
-    margin: auto auto;
+    margin: 20% auto;
 }

@@ -1,12 +1,13 @@
 <div class="loginForm">
+  <h2>{{loginAs}} Portal</h2>
 
-  <label>Username:</label><br>
+  <label>Username:</label>
   <input [(ngModel)]="username" placeholder="Username">
   <br><br>
 
-  <label>Password:</label><br>
+  <label>Password:</label>
   <input type="password" [(ngModel)]="password" placeholder="Password">
 
-  <br>
+  <br><br>  
   <button (click)="signIn()">Sign in</button>
 </div>
