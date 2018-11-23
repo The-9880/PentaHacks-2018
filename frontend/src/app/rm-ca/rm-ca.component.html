@@ -1,3 +1,14 @@
-<p>
-  rm-ca works!
-</p>
+<div class = "grid">
+
+  <!-- Client Cards -->
+  <div class="cardContainer">
+    <div class="clientCard" *ngFor="let customer of customers" (click)="selectClient(customer)">
+      <h2>{{customer.Name}}</h2>
+      <p>Customer ID: {{customer.ID}}</p>
+    </div>
+  </div>
+
+  <!-- Area for client details. -->
+
+
+</div>

@@ -1,0 +1,25 @@
+.grid
+{
+    display: grid;
+    grid-template-columns: 15% 60%;
+
+}
+
+.clientCard
+{
+    background-color: black;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0 auto;
+
+    border-bottom: 1px solid white;
+    color:white;
+}
+.cardContainer
+{
+    margin:2vw 0;
+}
+.clientCard h2, .clientCard p
+{
+    margin: 0 0;
+}
