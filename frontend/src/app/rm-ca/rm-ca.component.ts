@@ -16,8 +16,7 @@ export class RMCAComponent implements OnInit {
 
   ngOnInit() {
 
-    this.backend.getAllCustomers().subscribe(data => this.customers.push(data));
-
+    this.backend.getAllCustomers().subscribe(data => this.customers = data);
   }
 
 }

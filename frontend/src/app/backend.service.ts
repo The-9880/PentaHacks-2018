@@ -23,9 +23,9 @@ export class BackendService {
     };
   }
 
-  getAllCustomers() : Observable<Customer>
+  getAllCustomers() : Observable<Customer[]>
   {
-    return this.http.get<Customer>('/api').pipe(
+    return this.http.get<Customer[]>('/api').pipe(
       tap(_ => console.log('Getting all customers.'))
     );
   }
