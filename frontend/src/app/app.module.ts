@@ -6,12 +6,16 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { AppRoutingModule } from './app-routing.module';
 import { LoginFormComponent } from './login-form/login-form.component';
+import { RMViewComponent } from './rm-view/rm-view.component';
+import { ClientViewComponent } from './client-view/client-view.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    LoginFormComponent
+    LoginFormComponent,
+    RMViewComponent,
+    ClientViewComponent
   ],
   imports: [
     BrowserModule,
