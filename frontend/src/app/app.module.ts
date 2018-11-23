@@ -8,6 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { LoginFormComponent } from './login-form/login-form.component';
 import { RMViewComponent } from './rm-view/rm-view.component';
 import { ClientViewComponent } from './client-view/client-view.component';
+import { AccountSidebarComponent } from './account-sidebar/account-sidebar.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ClientViewComponent } from './client-view/client-view.component';
     LoginComponent,
     LoginFormComponent,
     RMViewComponent,
-    ClientViewComponent
+    ClientViewComponent,
+    AccountSidebarComponent
   ],
   imports: [
     BrowserModule,
