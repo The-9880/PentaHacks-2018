@@ -15,6 +15,7 @@ import { AccountHeaderComponent } from './account-header/account-header.componen
 import { RMCMComponent } from './rm-cm/rm-cm.component';
 import { TrainingComponent } from './training/training.component';
 import { ProductsComponent } from './products/products.component';
+import { MyAccountComponent } from './my-account/my-account.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ProductsComponent } from './products/products.component';
     AccountHeaderComponent,
     RMCMComponent,
     TrainingComponent,
-    ProductsComponent
+    ProductsComponent,
+    MyAccountComponent
   ],
   imports: [
     BrowserModule,

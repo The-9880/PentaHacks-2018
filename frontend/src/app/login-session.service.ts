@@ -8,7 +8,7 @@ export class LoginSessionService {
 
   private accounts = [
     [ ['TrueRM', 'secure'], 'RM', 32324],
-    [ ['LoyalClient', 'password'], 'Client', 1234]
+    [ ['LoyalClient', 'password'], 'Client', 2]
   ];
 
   private accountID : number;

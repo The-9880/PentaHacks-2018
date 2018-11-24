@@ -38,5 +38,12 @@ export class BackendService {
     );
   }
 
+  getCustomer(id : number) : Observable<Customer>
+  {
+    return this.http.get<Customer>(`/api/customers/${id}`).pipe(
+      tap(_ => console.log('Retrieving account info.'))
+    );
+  }
+
 
 }
