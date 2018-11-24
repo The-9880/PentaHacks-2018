@@ -17,6 +17,7 @@ import { TrainingComponent } from './training/training.component';
 import { ProductsComponent } from './products/products.component';
 import { MyAccountComponent } from './my-account/my-account.component';
 import { MyAssetsComponent } from './my-assets/my-assets.component';
+import { MyRmComponent } from './my-rm/my-rm.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { MyAssetsComponent } from './my-assets/my-assets.component';
     TrainingComponent,
     ProductsComponent,
     MyAccountComponent,
-    MyAssetsComponent
+    MyAssetsComponent,
+    MyRmComponent
   ],
   imports: [
     BrowserModule,
