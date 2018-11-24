@@ -8,6 +8,7 @@ import { RMCMComponent } from './rm-cm/rm-cm.component';
 import { TrainingComponent } from './training/training.component';
 import { ProductsComponent } from './products/products.component';
 import { ClientViewComponent } from './client-view/client-view.component';
+import { MyAccountComponent } from './my-account/my-account.component';
 
 const routes : Routes = [
   {path: '', redirectTo:'/login', pathMatch:'full'},
@@ -20,7 +21,10 @@ const routes : Routes = [
     {path: 'skillset-training', component: TrainingComponent},
     {path: 'products-pool', component: ProductsComponent}
   ]},
-  {path:'Client/:id', component: ClientViewComponent}
+  {path:'Client/:id', component: ClientViewComponent,
+    children: [
+      {path:'personal-information', component:MyAccountComponent}
+      ]}
 ];
 
 @NgModule({

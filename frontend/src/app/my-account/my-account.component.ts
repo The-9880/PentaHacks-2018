@@ -17,8 +17,12 @@ export class MyAccountComponent implements OnInit {
   constructor(private backend : BackendService, private session: LoginSessionService) { }
 
   ngOnInit() {
-
-    this.backend.getCustomer(this.session.getAccountID()).subscribe(data => this.thisCustomer = data);
+    this.backend.getCustomer(this.session.getAccountID()).subscribe(data => {
+      this.thisCustomer = data;
+      alert(this.thisCustomer);
+      alert(data);
+      
+    });
 
   }
 

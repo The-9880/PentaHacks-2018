@@ -1,3 +1,10 @@
 <h1>My Personal Information</h1>
-
-{{thisCustomer.Name}}
+<div>
+    <label>Customer ID: {{thisCustomer.ID}}</label><br>
+    <label>Name: </label><input type="text" [(ngModel)]="thisCustomer.Name"><br><br>
+      <label>Age: </label><input type="text" [(ngModel)]="thisCustomer.Age"><br><br>
+      <label>Race: </label><input type="text" [(ngModel)]="thisCustomer.Race"><br><br>
+      <label>Gender: </label><input type="text" [(ngModel)]="thisCustomer.Gender"><br><br>
+      <label>Language: </label><input type="text" [(ngModel)]="thisCustomer.Language"><br><br><br>
+      <button>Save Changes</button>
+</div>

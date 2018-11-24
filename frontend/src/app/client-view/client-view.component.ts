@@ -10,7 +10,7 @@ import { LoginSessionService } from '../login-session.service';
 })
 export class ClientViewComponent implements OnInit {
 
-  constructor(private sessionService: LoginSessionService) { }
+  constructor(private sessionService : LoginSessionService, private route:ActivatedRoute, private location:Location) { }
 
   ngOnInit() {
     if(this.sessionService.getAccountType() != 'Client')
