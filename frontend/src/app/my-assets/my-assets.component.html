@@ -1,3 +1,13 @@
-<p>
-  my-assets works!
-</p>
+<div>
+      <h1>Assets Information</h1>
+      <label>Asset ID: {{asset.ID}}</label><br>
+      <label>Deposit: </label><input type="text" [(ngModel)]="asset.Deposit"><br><br>
+      <label>Credit Score: </label><input type="text" [(ngModel)]="asset.CreditScore"><br><br>
+      <label>Savings: </label><input type="text" [(ngModel)]="asset.Savings"><br><br>
+      <label>Risk Level: </label><input type="text" [(ngModel)]="asset.RiskLevel"><br><br>
+      <label>Collateral Value: </label><input type="text" [(ngModel)]="asset.CollateralValue"><br><br>
+      <label>Investment length in days: </label><input type="text" [(ngModel)]="asset.InvestmentLengthDays"><br><br>
+      <label>Salary: </label><input type="text" [(ngModel)]="asset.Salary"><br><br>
+      <label>Profession: </label><input type="text" [(ngModel)]="asset.Profession"><br><br><br>
+      <button>Save Changes</button>
+      </div>

@@ -10,6 +10,9 @@ import { LoginSessionService } from '../login-session.service';
 })
 export class ClientViewComponent implements OnInit {
 
+  private accountID : number;
+  private authenticated : boolean;
+
   constructor(private sessionService : LoginSessionService, private route:ActivatedRoute, private location:Location) { }
 
   ngOnInit() {

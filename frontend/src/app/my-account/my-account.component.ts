@@ -19,9 +19,6 @@ export class MyAccountComponent implements OnInit {
   ngOnInit() {
     this.backend.getCustomer(this.session.getAccountID()).subscribe(data => {
       this.thisCustomer = data;
-      alert(this.thisCustomer);
-      alert(data);
-      
     });
 
   }
