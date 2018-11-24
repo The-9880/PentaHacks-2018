@@ -10,6 +10,7 @@
   
     <!-- Area for client details. -->
     <div class="clientDetails" *ngIf="currentCustomer">
+      <div style="float:left;">
       <h1>Customer Details</h1>
       <label>Customer ID: {{currentCustomer.ID}}</label><br>
       <label>Name: </label><input type="text" [(ngModel)]="currentCustomer.Name"><br><br>
@@ -18,7 +19,9 @@
       <label>Gender: </label><input type="text" [(ngModel)]="currentCustomer.Gender"><br><br>
       <label>Language: </label><input type="text" [(ngModel)]="currentCustomer.Language"><br><br><br>
       <button>Save Changes</button>
+      </div>
 
+      <div style="float:left;">
       <h1>Assets Information</h1>
       <label>Asset ID: {{asset.ID}}</label><br>
       <label>Deposit: </label><input type="text" [(ngModel)]="asset.Deposit"><br><br>
@@ -30,6 +33,7 @@
       <label>Salary: </label><input type="text" [(ngModel)]="asset.Salary"><br><br>
       <label>Profession: </label><input type="text" [(ngModel)]="asset.Profession"><br><br><br>
       <button>Save Changes</button>
+      </div>
     </div>
 
     

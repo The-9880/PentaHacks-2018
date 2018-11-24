@@ -8,6 +8,12 @@
 .clientDetails
 {
     text-align: center;
+    padding: 0 2vw;
+    margin: 0 auto;
+}
+.clientDetails div
+{
+    margin: 0 2vw;
 }
 .clientCard
 {

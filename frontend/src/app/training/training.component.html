@@ -1,3 +1,56 @@
-<p>
-  training works!
-</p>
+  <!-- <script src="../training/main.js"></script> -->
+
+<h1>Welcome to the Training Hub!</h1>
+<span>Read over the case in the document below. Then, type out how you would handle the situation
+  in the space to the right. When you're ready to check your answer compared to an expert, click the
+  <strong>SHOW</strong> button.
+</span><br><br>
+
+<div id="training">
+  <div class="tab">
+    <button class="tablinks" (click)="openCase(event, 'case1')">Case 1</button>
+    <button class="tablinks" (click)="openCase(event, 'case2')">Case 2</button>
+  </div>
+
+  <div id="case1" class="tabcontent">
+    <h2>Case 1</h2><br>
+    <h4>Situation: </h4><br>
+    <p>A client plans to invest 200 million into a project but is faced with a shortage of 20 million dollars.
+      This project has an annual rate of return 2%, which means the promising profit is: 200 million * 2% =
+      10 million. Therefore, a loan of 20 million is expected with interest lower than 10 million. Another
+      word, a loan with the fund cost lower than 50% is considered profitable (in this case, the fund cost is
+      10 million/20 million).</p><br>
+    <h4>Question: </h4><br>
+    <p>How would you give the loan to the customer, ensuring that you: </p><br>
+    <p>a) Minimize the clients' financial cost</p>
+    <p>b) Increase the possibility that this client chooses your bank the next time.</p><br>
+    <h3>Your Solution: </h3><br>
+    <textarea id="ans1" rows="8" cols="100" placeholder="Type your solution here..." required></textarea><br>
+    <input type="submit" (click)="showSolution(1)"><br><br>
+    <div id="solution1" class="solution"></div>
+    <div id="analyze1" class="analyze"></div>
+  </div>
+
+  <div id="case2" class="tabcontent">
+    <h2>Case 2</h2><br>
+    <h4>Situation: </h4><br>
+    <p>A female client deposited 300 thousand dollars in bank B. An RM reached out to this new client and get
+      to know this deposit is temporary. Still, this RM introduced financing product to increase the rate of
+      return. When the deposit along with return is transferred back to its owner, the owner is satisfied
+      with the return rate. It turns out the owner of this 300 thousand deposit is an electrical engineering
+      with his own company. This male client's asset is divided into two parts: one part deposited for saving
+      and the other part for company financing. And this male client has a close friend who is an RM at bank
+      A. This RM managed to transfer this client from bank A to bank B.
+    </p><br>
+    <h4>Question: </h4><br>
+    <p>How would you manage to transfer client from bank A to B as to satisfy the client requirement for both
+      rate of return and fund liquidity, and what external research would you refer to negotiate with client?</p><br>
+    <h3>Your Solution: </h3><br>
+    <textarea id="ans2" rows="8" cols="100" placeholder="Type your solution here..." required></textarea><br>
+    <input type="submit" (click)="showSolution(2)"><br><br>
+    <div id="solution2" class="solution"></div>
+    <div id="analyze2" class="analyze"></div>
+  </div>
+</div>
+<div id="answerField"></div>
+<div class="expertAnswers"></div>
