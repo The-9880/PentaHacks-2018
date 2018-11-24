@@ -1,10 +1,14 @@
 .grid
 {
     display: grid;
-    grid-template-columns: 15% 60%;
+    grid-template-columns: 15% 85%;
 
 }
 
+.clientDetails
+{
+    text-align: center;
+}
 .clientCard
 {
     background-color: black;

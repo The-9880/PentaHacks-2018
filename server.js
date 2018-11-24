@@ -14,14 +14,15 @@ app.get('/api', (req, res) => {
 
     var pyProcess = spawn('python', ["./python-scripts/CustomerInfoTable/SearchForAllCustomersInfo.py"]);
     pyProcess.stdout.on('data', (data) => res.send(data.toString('utf-8'))); 
-})
+});
 
-app.get('/', (req, res) => {
-    console.log('GET at /');
-    res.json({"ID":"123", "name":"John", "Age":"34", "Race":"Gottem", "Gender":"Helicopter", "Language":"English"});
-})
+app.get('/api/assets', (req, res) => {
+    console.log('GET all assets');
+    var pyProcess = spawn('python', ["./python-scripts/AssetInfoTable/SearchForAllAssetInfo.py"]);
+    pyProcess.stdout.on('data', (data) => {res.send(data.toString('utf-8'))}); 
+});
 
 
 app.listen(8081, ()=>{
     console.log('Server listening on ' + port);
-})
+});

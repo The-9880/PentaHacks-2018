@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Customer } from '../customer';
+import { Asset } from '../assets';
 
 import { BackendService } from '../backend.service';
 
@@ -15,6 +16,8 @@ export class RMCMComponent implements OnInit {
   customers: Customer[] = [];
   private currentCustomer: Customer;
 
+  private asset: Asset;
+
   ngOnInit() {
     this.backend.getAllCustomers().subscribe(data => {
 
@@ -22,13 +25,15 @@ export class RMCMComponent implements OnInit {
         this.customers.push(JSON.parse(customer.toString()));
       });
 
+      this.currentCustomer = this.customers[0];
+
+      this.backend.getAssets().subscribe(data => this.asset = JSON.parse(data[0]));
     });
   }
 
   selectClient(client : Customer)
   {
     // Populate client info fields with client details.
-    alert("Selected");
     this.currentCustomer = client;
 
   }

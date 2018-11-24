@@ -12,7 +12,7 @@ def all_asset_info_to_JSON():
     asset_list = []
     asset_strings = []
 
-    for asset in list_of_asset():
+    for asset in list_of_asset:
         asset_list.append({
             "ID": asset[0],
             "Deposit": asset[1],
@@ -28,4 +28,4 @@ def all_asset_info_to_JSON():
         asset_strings.append(json.dumps(asset, indent=2))
     return asset_strings
 
-print(all_asset_info_to_JSON())
+print(json.dumps(all_asset_info_to_JSON()))

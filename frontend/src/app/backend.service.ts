@@ -4,6 +4,7 @@ import { catchError, map, tap } from 'rxjs/operators';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 import { Customer } from './customer';
+import { Asset } from './assets';
 
 @Injectable({
   providedIn: 'root'
@@ -27,6 +28,13 @@ export class BackendService {
   {
     return this.http.get<Customer[]>('/api').pipe(
       tap(_ => console.log('Getting all customers.'))
+    );
+  }
+
+  getAssets() : Observable<Asset[]>
+  {
+    return this.http.get<Asset[]>('/api/assets').pipe(
+      tap(_ => console.log(_))
     );
   }
 
