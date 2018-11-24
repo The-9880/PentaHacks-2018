@@ -1,3 +1,22 @@
-<p>
-  rm-cm works!
-</p>
+<div class = "grid">
+
+    <!-- Client Cards -->
+    <div class="cardContainer">
+      <div class="clientCard" *ngFor="let customer of customers" (click)="selectClient(customer)">
+        <h2>{{customer.Name}}</h2>
+        <p>Customer ID: {{customer.ID}}</p>
+      </div>
+    </div>
+  
+    <!-- Area for client details. -->
+    <div class="clientDetails" *ngIf="currentCustomer">
+      <label>Customer ID: {{currentCustomer.ID}}</label><br>
+      <label>Name: {{currentCustomer.Name}}</label><br>
+      <label>Age: {{currentCustomer.Age}}</label><br>
+      <label>Race: {{currentCustomer.Race}}</label><br>
+      <label>Gender: {{currentCustomer.Gender}}</label><br>
+      <label>Language: {{currentCustomer.Language}}</label>
+    </div>
+  
+  </div>
+  

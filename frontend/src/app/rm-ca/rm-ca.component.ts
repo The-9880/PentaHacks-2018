@@ -11,6 +11,7 @@ import { BackendService } from '../backend.service';
 export class RMCAComponent implements OnInit {
 
   private customers : Customer[] = [];
+  private currentCustomer : Customer;
 
   constructor(private backend : BackendService) { }
 
@@ -28,6 +29,9 @@ export class RMCAComponent implements OnInit {
   selectClient(client : Customer)
   {
     // Populate client info fields with client details.
+    alert("Selected");
+    this.currentCustomer = client;
+
   }
 
 }
