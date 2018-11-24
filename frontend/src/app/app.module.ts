@@ -16,6 +16,7 @@ import { RMCMComponent } from './rm-cm/rm-cm.component';
 import { TrainingComponent } from './training/training.component';
 import { ProductsComponent } from './products/products.component';
 import { MyAccountComponent } from './my-account/my-account.component';
+import { MyAssetsComponent } from './my-assets/my-assets.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { MyAccountComponent } from './my-account/my-account.component';
     RMCMComponent,
     TrainingComponent,
     ProductsComponent,
-    MyAccountComponent
+    MyAccountComponent,
+    MyAssetsComponent
   ],
   imports: [
     BrowserModule,

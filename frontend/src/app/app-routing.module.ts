@@ -9,6 +9,7 @@ import { TrainingComponent } from './training/training.component';
 import { ProductsComponent } from './products/products.component';
 import { ClientViewComponent } from './client-view/client-view.component';
 import { MyAccountComponent } from './my-account/my-account.component';
+import { MyAssetsComponent } from './my-assets/my-assets.component';
 
 const routes : Routes = [
   {path: '', redirectTo:'/login', pathMatch:'full'},
@@ -23,7 +24,8 @@ const routes : Routes = [
   ]},
   {path:'Client/:id', component: ClientViewComponent,
     children: [
-      {path:'personal-information', component:MyAccountComponent}
+      {path:'personal-information', component:MyAccountComponent},
+      {path:'my-assets', component: MyAssetsComponent}
       ]}
 ];
 
