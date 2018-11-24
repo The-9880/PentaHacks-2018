@@ -46,8 +46,9 @@ responseString = "<h3>Your Response:</h3><br>"
 openCase(evt, caseNum) {
     var tabcontent = document.getElementsByClassName("tabcontent");
     var tablinks = document.getElementsByClassName("tablinks");
-    for (var i = 0; i < tabcontent.length; i++)
-        tabcontent[i].style.display = "none";
+    for (var i = 0; i < tabcontent.length; i++){
+        let elt = tabcontent[i] as HTMLElement;
+        elt.style.display = "none";}
     for (var i = 0; i < tablinks.length; i++)
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     document.getElementById(caseNum).style.display = "block";

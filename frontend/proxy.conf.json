@@ -1,6 +1,6 @@
 {
     "/api": {
-        "target": "http://127.0.0.1:8081",
+        "target": "https://pentahacks-2018-the-9880.c9users.io:8081",
         "secure": false,
         "changeOrigin": true,
         "logLevel": "info"

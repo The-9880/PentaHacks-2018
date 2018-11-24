@@ -1,3 +1,19 @@
-<p>
-  client-view works!
-</p>
+<!-- Account controls section will go up here. -->
+<app-account-header></app-account-header>
+
+<ul class="router-nav">
+    <li><a>Personal Information</a></li>
+    <li><a>My Assets</a></li>
+    <li><a>My Products</a></li>
+    <li><a>My RM</a></li>
+  </ul>
+
+<!-- Content area divided between paginated components and sidebar - 80-20 split. -->
+<div class="grid">
+  <div>
+    <router-outlet></router-outlet>
+  </div>
+
+  <app-account-sidebar></app-account-sidebar>
+
+</div>

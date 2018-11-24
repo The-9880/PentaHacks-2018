@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Location } from '@angular/common';
+import { LoginSessionService } from '../login-session.service';
 
 @Component({
   selector: 'app-client-view',
@@ -7,9 +10,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ClientViewComponent implements OnInit {
 
-  constructor() { }
+  constructor(private sessionService: LoginSessionService) { }
 
   ngOnInit() {
+    if(this.sessionService.getAccountType() != 'Client')
+      this.location.back();
+
+    this.accountID = +this.sessionService.getAccountID();
+    this.authenticated = this.sessionService.isAuthenticated() as boolean;
+
+    if(+this.accountID != +this.route.snapshot.paramMap.get('id')){
+      this.location.back(); 
+    
+  }
   }
 
 }
